@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestion de la Liste des Personnes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-6 rounded shadow-md w-full max-w-md">
+    <h1 class="text-2xl font-bold mb-4 text-center">Liste des Personnes</h1>
+    <form id="userForm" class="flex mb-4">
+      <input
+        type="text"
+        id="userName"
+        class="flex-1 border border-gray-300 p-2 rounded-l"
+        placeholder="Ajouter une personne"
+        required
+      />
+      <button
+        type="submit"
+        class="bg-blue-500 text-white px-4 rounded-r hover:bg-blue-600"
+      >
+        Ajouter
+      </button>
+    </form>
+    <ul id="userList" class="list-disc pl-5">
+      <!-- Les noms seront ajoutés ici -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
