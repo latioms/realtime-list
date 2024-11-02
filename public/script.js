@@ -4,7 +4,7 @@ const userNameInput = document.getElementById('userName');
 
 // Fonction pour charger la liste des usernes
 async function loadusers() {
-  const response = await fetch('/api/users');
+  const response = await fetch('https://d045-129-0-60-51.ngrok-free.app/api/users');
   const users = await response.json();
   userList.innerHTML = '';
   users.forEach((user) => {
@@ -19,7 +19,7 @@ form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const name = userNameInput.value.trim();
   if (name) {
-    await fetch('/api/users', {
+    await fetch('https://d045-129-0-60-51.ngrok-free.app/api/users', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name }),
