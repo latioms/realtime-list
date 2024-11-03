@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-const MONGODB_URI ="mongodb+srv://latioms:DuM7S82EdSr5xmC4@cluster0.gtxgx4f.mongodb.net/realtime-list?tls=true"
+
 const path = require("path");
 
 const app = express();
